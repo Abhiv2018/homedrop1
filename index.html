@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+	<link rel="shortcut icon" type="img/png" href="here1.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	<div class="loginbox">
+	<img src="avatar.png" class="avatar">
+	<h1>Login Here</h1>
+	<form name="Login">
+	
+		<p>Username</p>
+		<input type="text" name="userid" placeholder="Enter Username">
+		<p>Password</p>
+		<input type="Password" name="pswrd" placeholder="Enter Password">
+		<input type="button" onclick="check(this.form)" Value="Login"/>
+		
+		<a href="#">Lost your password?</a><br>
+		<a href="#">Dont have an account?</a>
+		</div>
+	</form>
+	
+	<script language="javascript">
+	function check(form)
+	{
+		if(form.userid.value == "Abhi" && form.pswrd.value == "123")
+		{	
+		window.location="second.html"
+	}
+	else
+	{
+		alert("The username and password you entered don't match.")
+	}
+}	
+	
+	</script>
+	
+
+</body>
+</head>
+</html>
